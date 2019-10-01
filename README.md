@@ -33,12 +33,15 @@ This is forked version based on [trailbehind](https://github.com/trailbehind/lrm
 ## RouteRestriction `routeRestriction`
 Since the 1.1.0 version, you can calculate the route witch attributes of the route. To achieve this set `generateMode: true` and fill options under `routeRestriction` object using properties from below.
 
+Since the 1.4.0 version, you can calculate the route with new attribute trafficMode.
+
   | Property     | Type    | Default | Options |
   | ------       | -----   | ------- | ------- |
-  | avoidHighways| boolean | | |
-  | avoidTolls   | boolean | | |
-  | avoidFerries | boolean | | |
-  | vehicleType  | string  | car |  [Available options](https://developer.here.com/documentation/routing/topics/resource-param-type-routing-mode.html#type-transport-mode) |
+  | avoidHighways| boolean | false   | |
+  | avoidTolls   | boolean | false   | |
+  | avoidFerries | boolean | false   | |
+  | trafficMode  | boolean | false   | |
+  | vehicleType  | string  | car     |  [Available options](https://developer.here.com/documentation/routing/topics/resource-param-type-routing-mode.html#type-transport-mode) |
   | routeType    | string  | fastest | [Available options](https://developer.here.com/documentation/routing/topics/resource-param-type-routing-mode.html#type-routing-type) |
 
 ### WARNING
